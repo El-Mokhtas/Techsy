@@ -6,7 +6,7 @@
 body {
     font-family: 'Cairo', sans-serif;
     height: 250vh;
-    overfolw-x:hidden;
+    overfolw-x:hidden !important;
     scroll-behavior: smooth;
     background: radial-gradient(ellipse, #001e45, #004aad);
 }
@@ -1606,3 +1606,4 @@ main .back .arro-back i:hover{
 
 
 }
+
