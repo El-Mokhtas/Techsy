@@ -1,10 +1,3 @@
-function openSidebar() {
-  document.getElementById("sidebar").style.display = "block";
-}
-
-function closeSidebar() {
-  document.getElementById("sidebar").style.display = "none";
-}
 document.addEventListener('DOMContentLoaded', function() {
     const products = [
         {
@@ -161,7 +154,7 @@ products.forEach(product => {
                         data-in-stock="${product.inStock}">
                             <i class="fa-solid fa-cart-plus me-3"></i>
                         </button>
-                        <a href="/single-product.html" class="view-details"> <i class="fa fa-eye"></i> </a>
+                        <a href="Techsy/single-product.html" class="view-details"> <i class="fa fa-eye"></i> </a>
 
                     </div>
                 </div>
@@ -231,4 +224,5 @@ const stackedImages = document.querySelectorAll('.stacked');
       images.forEach(i => i.classList.remove('clicked'));
       img.classList.add('clicked');
     });
+
   });
