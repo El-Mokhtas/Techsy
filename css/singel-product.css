@@ -992,8 +992,9 @@ main .back .arro-back i:hover{
     .main .back .cart-wrapper{
         display: none;
     }
-    .container-details .container .right .features {
-        flex-wrap:wrap;
+     .right .features {
+            flex-wrap: wrap !important;
+     }
 }
 
 /*Desktop 1024*/
@@ -1608,5 +1609,6 @@ main .back .arro-back i:hover{
 
 
 }
+
 
 
