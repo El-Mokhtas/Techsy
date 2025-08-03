@@ -6,6 +6,7 @@
 body {
     font-family: 'Cairo', sans-serif;
     height: 250vh;
+    overfolw-x:hidden;
     scroll-behavior: smooth;
     background: radial-gradient(ellipse, #001e45, #004aad);
 }
@@ -1602,5 +1603,6 @@ main .back .arro-back i:hover{
     .comment .show-user .stars .star-empty{
         font-size: 16px;
     }
+
 
 }
