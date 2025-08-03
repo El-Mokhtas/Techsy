@@ -892,7 +892,7 @@ a {
 
 /* Checkout - Hussien Yousef */
 .checkout-page {
-    background-color: var(--primary-color);
+    background-color: #f0f4fe;
 }
 
 .checkout-container {
@@ -1634,3 +1634,4 @@ header .Top-header .lift-bar .cart-count {
 
 
 /* Stacked images - Jihad Abdelnaser */
+
