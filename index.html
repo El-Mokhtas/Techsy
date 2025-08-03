@@ -21,55 +21,72 @@
         <img src="./imgs/techsy_loader.gif" alt="Logo" class="loader-logo">
         <i class="fa-solid fa-spinner fa-spin"></i>
     </div>
-    <div class="overlay" id="overlay"></div>
-    <div class="sidebar" id="sidebar">
-        <i class="fa-solid fa-xmark close-btn" id="closeSidebar"></i>
-        <ul>
+   <!-- -----------header-------------- -->
+    <header>
+      <div class="container">
+        <div class="Top-header">
+          <div class="header-tablet">
+            <a href="index.html"
+              ><img src="imeges/Logo-project.png" alt="Logo.png"
+            /></a>
+            <div class="toggle_btn" onclick="openSidebar()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div class="lift-bar">
+            <a href="#"
+              ><p class="login-btn">
+                Log in <i class="fa-solid fa-right-to-bracket"></i></p
+            ></a>
+            <div class="cart-wrapper">
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+              </a>
+              <span class="cart-count" id="cartCount">0</span>
+            </div>
+          </div>
+        </div>
+        <nav class="bottom-header">
+          <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./contact.html">Contact</a></li>
             <li><a href="./cart.html">Cart</a></li>
             <li><a href="./single-product.html">Details</a></li>
-        </ul>
-    </div>
-    <header>
-        <div class="container">
-            <div class="Top-header">
-                <div class="header-tablet">
-                    <a href="index.html"><img src="./imgs/logo.png" alt="Logo.png" /></a>
-
-                </div>
-                <div class="search">
-                    <i class="fa fa-search"></i>
-                    <input type="text" placeholder="Search..." />
-                </div>
-                <div class="lift-bar">
-                    <div class="toggle_btn">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                    <a href="./login.html" class="login-link">
-                        <p class="login-btn">
-                            Log in <i class="fa-solid fa-right-to-bracket"></i></p>
-                    </a>
-                    <div class="cart-wrapper">
-                        <a href="#">
-                            <i class="fa-solid fa-cart-shopping cart-icon"></i>
-                        </a>
-                        <span class="cart-count" id="cartCount">0</span>
-                    </div>
-                </div>
+          </ul>
+        </nav>
+      </div>
+      <aside>
+        <!-- السايد بار -->
+        <div class="sidebar" id="sideMenu">
+          <div class="sidebar-header">
+            <h3>Menu</h3>
+            <button class="close-btn" onclick="closeSidebar()"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+          </div>
+          <ul class="sidebar-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="./single-product.html">Details</a></li>
+          </ul>
+          <hr />
+          <a href="#" class="btn-sidebar">Log in</a>
+          <div class="cart-wrapper">
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+              </a>
+              <span class="cart-count" id="cartCount">0</span>
             </div>
-            <nav class="bottom-header">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./cart.html">Cart</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./single-product.html">Details</a></li>
-                </ul>
-            </nav>
         </div>
+        <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+      </aside>
     </header>
+    <!-- -----------End header-------------- -->
     <main>
         <!-- Hero - Hussien Yousef -->
         <div class="hero">
@@ -193,5 +210,6 @@
     <script src="./js/custom.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 
 </html>
