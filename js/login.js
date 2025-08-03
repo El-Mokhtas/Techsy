@@ -14,7 +14,7 @@ form.addEventListener("submit", function (event) {
         if (user.email == email) {
             if (user.password == password) {
                 localStorage.setItem("isLoggedIn", "true");
-                window.location.href = "home.html";
+                window.location.href = "index.html";
             } else {
                 alert("Wrong password");
             }
@@ -23,3 +23,4 @@ form.addEventListener("submit", function (event) {
         }
     }
 });
+
