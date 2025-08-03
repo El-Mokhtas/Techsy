@@ -5,8 +5,7 @@
 }
 body {
     font-family: 'Cairo', sans-serif;
-    height: 250vh;
-    overfolw-x:hidden !important;
+    /* height: 250vh; */
     scroll-behavior: smooth;
     background: radial-gradient(ellipse, #001e45, #004aad);
 }
@@ -29,8 +28,14 @@ a {
     text-decoration: none;
 }
 
-/*----------End header----------*/
-
+.main{
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .main .back{
     margin: 25px 18px 0 18px;
     display: flex;
@@ -367,7 +372,6 @@ main .back .arro-back i:hover{
 .container-details .container .right .features {
     display: flex;
     align-items: center;
-        flex-wrap: wrap !important;
     /* justify-content: space-between; */
     gap: 5px;
 }
@@ -416,7 +420,7 @@ main .back .arro-back i:hover{
 .hr{
     display: none;
 }
-/*section 2*/
+/section 2/
 .Product-Details{
     display: flex;
     align-items: center;
@@ -509,7 +513,7 @@ main .back .arro-back i:hover{
     text-decoration: underline;
     font-weight: bold;
 }
-/*----section 3 rate*/
+/----section 3 rate/
 
 .ratings-section {
     display: flex;
@@ -796,166 +800,12 @@ main .back .arro-back i:hover{
     to { opacity: 1; transform: translateY(0); }
 }
 
-/*Responseve*/
-/*Desktop 1440*/
-@media (max-width : 1024px){
-    .main .back .cart-wrapper{
-        display: none;
-    }
-     .right .features {
-            flex-wrap: wrap !important;
-     }
-}
-
-/*Desktop 1024*/
-@media (max-width : 1024px) {
-    header{
-        display: block;
-    }
-    .main .back .cart-wrapper{
-        display: none;
-    }
-    header .container-header {
-    width: 90%;
-    gap: 20px;
-    }
-    header .container-header .Top-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    }
-    .container-header .bottom-header {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
-    }
-    header .Top-header .search {
-        width: 400px;
-    }
-    .container-details .container{
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-        border: none;
-        margin-top: 0;
-        box-shadow: none;
-        border-radius: 0;
-        width: 100%;
-    }
+/Responseve/
+/Desktop 1440/
 
 
-    .container-details .container .left {
-        width: 70%;
-    }
-    .container-details .container .left {
-        width: 100%;
-    }
-    .container-details .container .left .main-img {
-    width: 100%;
-    /* object-fit: cover; */
-    height: 250px;
-    }
-    .container-details .container .thumbnails img {
-    width: 100px;
-    height: 70px;
-    border-radius: 12px;
-    }
-    .container-details .container .right .product-title {
-    font-size: 20px;
-    width: max-content;
-    }
-    .container-details .container .right .right-top .favorite {
-    font-size: 20px;
-    padding: 6px;
-    border-radius: 12px;
-    }
-    .message {
-    top: 8%;
-    right: 25%;
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 8px;
-    }
-    .container-details .container .right .description p {
-    width: 100%;
-    font-size: 14px;
-    }
-    .container-details .container .right .reviews .stars {
-    font-size: 16px;
-    }
-    .container-details .container .right .reviews a {
-    font-size: 12px;
-    }
-    .container-details .container .right .price {
-    font-size: 24px;
-    color: #25d900;
-    }
-    .container-details .container .right .quantity .text {
-        font-size: 16px;
-        width: max-content;
-    }
-    .container-details .container .right .quantity button {
-    padding: 8px;
-    font-size: 16px;
-    }
-    .container-details .container .right .quantity #qty {
-        font-size: 16px;
-    }
-    .container-details .container .right .cart-message {
-    top: 125px;
-    right: 20px;
-    width: 250px;
-    border-radius: 16px;
-    flex-direction: column;
-    }
-    .container-details .container .right .cart-message .arrow i {
-        font-size: 16px;
-    }
-    .container-details .container .right .cart-message img {
-        width: 100%;
-    }
-    .container-details .container .right .cart-message .car-details p {
-        font-size: 16px;
-    }
-    .container-details .container .right .cart-message .car-details button {
-    
-        font-size: 16px;
-    }
-    .container-details .container .right .add-to-cart {
-        font-size: 18px;
-    }
-    .container-details .container .right .features {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);   
-        gap: 15px;
-        width: 100%;
-    }
-    .container-details .container .right .feature-item {
-        width: 100%;
-    }
-    .container-details .container .right .feature-title h3 {
-        font-size: 16px;
-    }
-    .container-details .container .right .feature-title a {
-        font-size: 12px;
-    }
-    .container-details .container .right .feature-title p {
-        font-size: 12px;
-        width: max-content;
-    }
-    .hr{
-        display: block;
-        max-width: 450px;
-        width: 100%;
-        opacity: 0.3;
-        margin: 0 auto;
-    }
 
-
-}
-/*tablet*/
+/tablet/
 @media (max-width : 768px) {
     header{
         display: none;
@@ -1084,7 +934,7 @@ main .back .arro-back i:hover{
 
 
 }
-/*phone L*/
+/phone L/
 @media (max-width : 500px) {
     header{
         display: none;
@@ -1300,7 +1150,7 @@ main .back .arro-back i:hover{
 
 
 }
-/*phone M , S*/
+/phone M , S/
 @media (max-width : 400px){
     header{
         display: none;
@@ -1417,9 +1267,7 @@ main .back .arro-back i:hover{
         font-size: 16px;
     }
 
-
 }
-
 
 
 
@@ -1808,6 +1656,7 @@ header .Top-header .lift-bar .cart-count {
         gap: 20px;
     }
 }
+
 
 
 
