@@ -1711,7 +1711,7 @@ header .Top-header .lift-bar .cart-count {
 .text-area ul li::before {
   content: '✔';
   position: absolute;
-  left: -25px;
+  left: -10px;
   color: #337ee6;
 }
 
@@ -1781,6 +1781,7 @@ header .Top-header .lift-bar .cart-count {
     display: none; 
   }
 }
+
 
 
 
