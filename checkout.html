@@ -16,6 +16,60 @@
 </head>
 
 <body>
+     <div class="loader">
+        <img src="./imgs/techsy_loader.gif" alt="Logo" class="loader-logo">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="sidebar" id="sidebar">
+        <i class="fa-solid fa-xmark close-btn" id="closeSidebar"></i>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="./single-product.html">Details</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="container">
+            <div class="Top-header">
+                <div class="header-tablet">
+                    <a href="index.html"><img src="./imgs/logo.png" alt="Logo.png" /></a>
+
+                </div>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search..." />
+                </div>
+                <div class="lift-bar">
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <a href="./login.html" class="login-link">
+                        <p class="login-btn">
+                            Log in <i class="fa-solid fa-right-to-bracket"></i></p>
+                    </a>
+                    <div class="cart-wrapper">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        </a>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="bottom-header">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./single-product.html">Details</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
     <section class="checkout-page">
         <div class="checkout-container">
             <div class="checkout-header">
@@ -143,7 +197,59 @@
             </div>
         </div>
     </section>
+    
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <img src="./imgs/logo.png" class="footer-logo" alt="Techsy Store Logo">
+                    <p> Your one-stop shop for all things tech. Techsy Store offers a wide range of products and
+                        services to meet your needs.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Company Info</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                        <li><a href="./cart.html">Cart</a></li>
+                        <li><a href="./single-product.html">Details</a></li>
+                        <li><a href="./login.html">sign in</a></li>
+                        <li><a href="./signup.html">sign up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Feetures</h4>
+                    <ul>
+                        <li><a href="#">Smart Devices</a></li>
+                        <li><a href="#">Best Deals</a></li>
+                        <li><a href="#">Fast Delivery</a></li>
+                        <li><a href="#">Tech Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">How to order</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#"> Track your order</a></li>
+                        <li><a href="#">FAQS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>@ 2025 Techsy. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
     <script src="./js/checkout.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 
 </html>
