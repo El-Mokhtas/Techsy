@@ -30,14 +30,7 @@ a {
 }
 
 /*----------End header----------*/
-.main{
-    width: 100%;
-    max-width: 1450px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+
 .main .back{
     margin: 25px 18px 0 18px;
     display: flex;
@@ -1815,5 +1808,6 @@ header .Top-header .lift-bar .cart-count {
         gap: 20px;
     }
 }
+
 
 
