@@ -1634,9 +1634,6 @@ header .Top-header .lift-bar .cart-count {
 
 
 /* Stacked images - Jihad Abdelnaser */
-.why-choose-us {
-    background-color:#fff;
-}
 
 .main-container {
   display: flex;
@@ -1781,5 +1778,6 @@ header .Top-header .lift-bar .cart-count {
     display: none; 
   }
 }
+
 
 
