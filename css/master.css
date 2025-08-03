@@ -915,7 +915,7 @@ a {
 .checkout-title {
     font-size: 28px;
     font-weight: 700;
-    color: var(--light-color);
+    color: var(--primaty-color);
     display: flex;
     align-items: center;
 }
@@ -963,7 +963,7 @@ a {
 
 .checkout-page .step-title {
     font-size: 14px;
-    color: var(--light-color);
+    color: var(--primary-color);
     font-weight: 500;
 }
 
@@ -1634,4 +1634,5 @@ header .Top-header .lift-bar .cart-count {
 
 
 /* Stacked images - Jihad Abdelnaser */
+
 
