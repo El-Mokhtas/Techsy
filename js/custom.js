@@ -154,7 +154,7 @@ products.forEach(product => {
                         data-in-stock="${product.inStock}">
                             <i class="fa-solid fa-cart-plus me-3"></i>
                         </button>
-                        <a href="Techsy/single-product.html" class="view-details"> <i class="fa fa-eye"></i> </a>
+                        <a href="single-product.html" class="view-details"> <i class="fa fa-eye"></i> </a>
 
                     </div>
                 </div>
@@ -226,3 +226,4 @@ const stackedImages = document.querySelectorAll('.stacked');
     });
 
   });
+
