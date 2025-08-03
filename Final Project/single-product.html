@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>details</title>
+    <link rel="stylesheet" href="./css/all.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/singel-product.css" />
+  </head>
+  <body>
+    <!-- -----------header-------------- -->
+    <header>
+      <div class="container-header">
+        <div class="Top-header">
+          <a href="index.html"
+            ><img src="imeges/Logo-project.png" alt="Logo.png"
+          /></a>
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div class="lift-bar">
+            <div class="user-acc">
+              <img src="imeges/user-img.png" alt="user-img" />
+              <a href="#"><p class="uesr-btn">Ziad Mohamed</p></a>
+            </div>
+            <div class="cart-wrapper">
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+              </a>
+              <span class="cart-count" id="cartCount">0</span>
+            </div>
+          </div>
+          <!-- <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div> -->
+        </div>
+        <nav class="bottom-header">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- -----------End header-------------- -->
+    <!-- -----------main-------------- -->
+    <main class="main">
+      <div class="back">
+        <a href="index.html" class="arro-back"><i class="fa fa-arrow-left"></i></a>
+        <div class="cart-wrapper">
+            <a href="#">
+              <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </a>
+            <span class="cart-count" id="cartCount">0</span>
+          </div>
+      </div>
+      <section class="container-details">
+        <div class="container">
+          <div class="left">
+            <img
+              id="mainImg"
+              class="main-img"
+              src="imeges/1.jpg"
+              alt="Main Image"
+            />
+
+            <div class="thumbnails">
+              <img src="imeges/1.jpg" onclick="changeImage(this)" />
+              <img src="imeges/2.jpg" onclick="changeImage(this)" />
+              <img src="imeges/3.jpg" onclick="changeImage(this)" />
+              <img src="imeges/4.jpg" onclick="changeImage(this)" />
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="right-top">
+              <h2 class="product-title">Apple MacBook Air M4</h2>
+              <span class="favorite" id="favIcon" onclick="toggleFavorite()"
+                ><i class="fa fa-heart"></i
+              ></span>
+            </div>
+            <div id="favMsg" class="message"></div>
+
+            <div class="description">
+              <p>
+                Apple MacBook Air M4 to go official in 2025: Here's Everything
+                we know so far - Smartprix
+              </p>
+            </div>
+
+            <div class="reviews">
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <a href="#go-coment">There are no reviews</a>
+            </div>
+
+            <div class="price">
+              <p>2999 $</p>
+            </div>
+
+            <div class="quantity">
+              <span class="text">Choose quantity:</span>
+              <button class="add" onclick="changeQty(1)">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <span id="qty">1</span>
+              <button class="rem" onclick="changeQty(-1)">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </div>
+
+            <hr style="width: 100%; max-width: 550px; margin: 0 auto" />
+
+            <button class="add-to-cart" onclick="addToCart()">
+              add to cart <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <div id="cartMsg" class="cart-message">
+              <span class="arrow"
+                ><i class="fa-solid fa-arrow-up-from-bracket"></i
+              ></span>
+              <img src="imeges/1.jpg" alt="#" />
+              <div class="car-details">
+                <p>
+                  Apple MacBook Air M4 to go official in 2025: Here's Everything
+                  we know so far - Smartprix
+                </p>
+                <span>2999$</span>
+                <button>
+                  shopping cart <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+            <div class="features">
+              <div class="feature-item">
+                <i class="fas fa-store"></i>
+                <div class="feature-title">
+                  <h3>Sell by</h3>
+                  <a href="#">TEC<span>HSY</span></a>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-undo-alt"></i>
+                <div class="feature-title">
+                  <h3>return</h3>
+                  <p>Within 14 days</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-lock"></i>
+                <div class="feature-title">
+                  <h3>Secure payment</h3>
+                  <p>Payment on delivery</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <div class="feature-title">
+                  <h3>a guarantee</h3>
+                  <p>Two years</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="hr">
+      <section class="Product-Details">
+        <h2 class="header-title">Product Details</h2>
+        <div class="product-Description">
+          <div class="description-item">
+            <div class="top-header" onclick="toggleMenu(this)">
+              <h1>Product Description</h1>
+              <div class="icon"><i class="fa fa-plus"></i></div>
+            </div>
+            <div class="all-details" id="menuBox">
+              <p>Brand: Apple</p>
+              <p>Processor Type: M2</p>
+              <p>Processor Brand: Apple</p>
+              <p>Processor Core: Octa Core</p>
+              <p>Graphics Card Capacity: Built-In Graphics Card</p>
+              <p>Graphics Card Brand: Apple</p>
+              <p>GPU: 8-Core</p>
+              <p>Hard Desk Capacity: 256GB</p>
+              <p>RAM Capacity: 8GB</p>
+              <p>Laptop Family: MacBook</p>
+              <p>Battery Capacity: Up To 18 Hours</p>
+              <p>Operating System: Mac OS</p>
+              <p>Color: Beige</p>
+            </div>
+            <hr />
+          </div>
+          <div class="description-item">
+            <div class="top-header" onclick="toggleMenu(this)">
+              <h1>Product Specifications</h1>
+              <div class="icon"><i class="fa fa-plus"></i></div>
+            </div>
+            <div class="all-details" id="menuBox">
+              <div class="item">
+                <p>Brand</p>
+                <span>Apple</span>
+              </div>
+              <div class="item">
+                <p>Laptop Processor Type</p>
+                <span>M4</span>
+              </div>
+              <div class="item">
+                <p>Processor Brand</p>
+                <span>Apple</span>
+              </div>
+              <div class="item">
+                <p>Processor Family</p>
+                <span>Apple</span>
+              </div>
+              <div class="item">
+                <p>Processor Core</p>
+                <span>Octa Core</span>
+              </div>
+              <div class="item">
+                <p>Laptop Processor Speed</p>
+                <span>More Than 2.5 GHz</span>
+              </div>
+              <div class="item">
+                <p>Laptop Screen Size</p>
+                <span>13 - 13.9 Inch</span>
+              </div>
+              <div class="item">
+                <p>Hard Disk Type</p>
+                <span>SSD</span>
+              </div>
+              <div class="item">
+                <p>Hard Disk Capacity</p>
+                <span>256 GB</span>
+              </div>
+              <div class="item">
+                <p>Graphics Card Brand</p>
+                <span>Apple</span>
+              </div>
+              <div class="item">
+                <p>Graphic Card Type</p>
+                <span>Built-in</span>
+              </div>
+              <div class="item">
+                <p>Graphics Card Capacity</p>
+                <span>Built-In Graphics Card</span>
+              </div>
+              <div class="item">
+                <p>RAM Capacity</p>
+                <span>8 GB</span>
+              </div>
+              <div class="item">
+                <p>Laptop Family</p>
+                <span>MacBook</span>
+              </div>
+              <div class="item">
+                <p>Laptop Usage</p>
+                <span>Business Laptop</span>
+              </div>
+              <div class="item">
+                <p>HDMI Ports</p>
+                <span>Yes</span>
+              </div>
+              <div class="item">
+                <p>Touch Screen</p>
+                <span>No</span>
+              </div>
+              <div class="item">
+                <p>Laptop Battery Capacity</p>
+                <span>Up To 18 Hours</span>
+              </div>
+              <div class="item">
+                <p>Laptop Operating System</p>
+                <span>Mac OS</span>
+              </div>
+              <div class="item">
+                <p>Color</p>
+                <span>Starlight</span>
+              </div>
+              <div class="item">
+                <p>Model Name</p>
+                <span>MacBook Air</span>
+              </div>
+              <div class="item">
+                <p>Model Number</p>
+                <span>MLY13AB/A</span>
+              </div>
+              <div class="item">
+                <p>SKU</p>
+                <span>MLY13AB/A-XPRS</span>
+              </div>
+            </div>
+            <hr />
+          </div>
+          <div class="description-item">
+            <div class="top-header" onclick="toggleMenu(this)">
+              <h1>Return & Refund</h1>
+              <div class="icon"><i class="fa fa-plus"></i></div>
+            </div>
+            <div class="all-details">
+              <p class="returns">
+                Returns within 14 days of delivery, Learn more about
+                <a href="#">the Return & Refund Policy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="hr">
+      <section class="ratings-section" id="go-coment">
+        <h2 class="text-header">RATINGS & REVIEWS</h2>
+        <div class="rating-box">
+          <div class="right-rating">
+            <div class="overall-score">0 <span>/ 5</span></div>
+
+            <div class="ratings-bars">
+              <div class="bar">
+                <span>0</span>
+                <div class="progress-bar">
+                  <div class="fill" style="width: 0%"></div>
+                </div>
+                <span>1/5</span>
+              </div>
+              <div class="bar">
+                <span>0</span>
+                <div class="progress-bar">
+                  <div class="fill" style="width: 0%"></div>
+                </div>
+                <span>2/5</span>
+              </div>
+              <div class="bar">
+                <span>0</span>
+                <div class="progress-bar">
+                  <div class="fill" style="width: 0%"></div>
+                </div>
+                <span>3/5</span>
+              </div>
+              <div class="bar">
+                <span>0</span>
+                <div class="progress-bar">
+                  <div class="fill" style="width: 0%"></div>
+                </div>
+                <span>4/5</span>
+              </div>
+              <div class="bar">
+                <span>0</span>
+                <div class="progress-bar">
+                  <div class="fill" style="width: 0%"></div>
+                </div>
+                <span>5/5</span>
+              </div>
+            </div>
+
+            <button class="review-btn">Write a Review<span class="icon"><i class="fa fa-arrow-down" aria-hidden="true"></i></span></button>
+    
+            <div class="review-form" id="reviewForm">
+              <div class="top-review">
+                <h3>Rate the product</h3>
+                <button class="close"><i class="fas fa-window-close"></i></button>
+              </div>
+              <div class="review-stars">
+                <h2>Share your experience</h2>
+                <p>Rate the product from 1 to 5, where 5 is the best.</p>
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <textarea placeholder="Tell us what you think!..." rows="4"></textarea>
+
+              <button class="send" onclick="submitReview()">Send comment</button>
+            </div>
+          </div>
+          <div class="done-rate">
+            <h2>Thank you for your review.</h2>
+          </div>
+          <div class="comment">
+            <div class="show-user"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/single-product.js"></script>
+  </body>
+</html>

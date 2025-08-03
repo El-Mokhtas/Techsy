@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Techsy Store</title>
+    <link rel="icon" href="./imgs/fav.png" type="image/x-icon">
+    <meta name="description"
+        content="Get in touch with Techsy Store for any inquiries or support. We are here to help you with your shopping experience.">
+    <meta name="keywords" content="contact, support, Techsy Store, customer service, inquiries">
+    <meta name="author" content="Techsy Team - Zainab  , Jihad Abdelnaser, Hussien Yousef, Zaid Mohamed">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="loader">
+        <img src="./imgs/techsy_loader.gif" alt="Logo" class="loader-logo">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="sidebar" id="sidebar">
+        <i class="fa-solid fa-xmark close-btn" id="closeSidebar"></i>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="./single-product.html">Details</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="container">
+            <div class="Top-header">
+                <div class="header-tablet">
+                    <a href="index.html"><img src="./imgs/logo.png" alt="Logo.png" /></a>
+
+                </div>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search..." />
+                </div>
+                <div class="lift-bar">
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <a href="./login.html" class="login-link">
+                        <p class="login-btn">
+                            Log in <i class="fa-solid fa-right-to-bracket"></i></p>
+                    </a>
+                    <div class="cart-wrapper">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        </a>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="bottom-header">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./single-product.html">Details</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="about-header">
+            <div class="overlay">
+                <div class="text-box">
+                    <h1>Contact Us</h1>
+                    <p>Home / Contact Us</p>
+                </div>
+            </div>
+        </div>
+        <section class="contact-section">
+            <div class="contact-form">
+                <h2>Contact With Us</h2>
+                <form class="contact-form">
+                    <div class="row">
+                        <input type="text" placeholder="First Name" required />
+                        <input type="text" placeholder="Last Name" required />
+                    </div>
+
+                    <div class="row">
+                        <input type="email" placeholder="Email Address" required />
+                        <input type="text" placeholder="Phone Number" required />
+                    </div>
+
+                    <input type="text" placeholder="Subject" required />
+
+                    <textarea placeholder="Your Message Here..." required></textarea>
+
+                    <button type="submit">Send Message</button>
+                    <div id="toast"></div>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="info">
+                    <h1>Need Any Help?</h1>
+                    <p> call us or massage we will respond as soon as possible</p>
+                    <div class="icon">
+                        <img class="img1" src="./imgs/telephone.png" alt="">
+                        <p>01558863495</p>
+                        <p>01207087571</p>
+                    </div>
+                    <div class="icon">
+                        <img class="img2" src="./imgs/mail.png" alt="">
+                        <p>jehad.naser@gmail.com</p>
+                        <p>ahmed.naser@gmail.com</p>
+                    </div>
+                    <div class="icon">
+                        <img class="img3" src="./imgs/placeholder.png" alt="">
+                        <p>assuit ,alqusya</p>
+                        <p>assuit ,dairote</p>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.545283493682!2d31.235711!3d30.044420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f7f7bc5cf07%3A0x8b5a3a8e6dd13df7!2z2YXYr9mK2Ykg2KfZhNmF2KzZitip!5e0!3m2!1sen!2seg!4v1684092587363!5m2!1sen!2seg"
+                        width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <img src="./imgs/logo.png" class="footer-logo" alt="Techsy Store Logo">
+                    <p> Your one-stop shop for all things tech. Techsy Store offers a wide range of products and
+                        services to meet your needs.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Company Info</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                        <li><a href="./cart.html">Cart</a></li>
+                        <li><a href="./single-product.html">Details</a></li>
+                        <li><a href="./login.html">sign in</a></li>
+                        <li><a href="./signup.html">sign up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Feetures</h4>
+                    <ul>
+                        <li><a href="#">Smart Devices</a></li>
+                        <li><a href="#">Best Deals</a></li>
+                        <li><a href="#">Fast Delivery</a></li>
+                        <li><a href="#">Tech Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">How to order</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#"> Track your order</a></li>
+                        <li><a href="#">FAQS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>@ 2025 Techsy. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
+<script src="./js/contact.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>
