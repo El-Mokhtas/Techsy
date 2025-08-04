@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #337ee6;
+    --primary-color: #7259b6;
     --dark-color: #2f3542;
     --bg-color: #f0f4fe;
     --bg1-color: rgb(250 250 250);
@@ -108,7 +108,7 @@ body {
 
 .contact-form button {
     padding: 12px;
-    background-color: #060e79;
+    background-color: #7259b6;
     color: white;
     font-size: 16px;
     border: none;
@@ -192,7 +192,7 @@ iframe {
 
 /* Zainab Kamel */
 .site-footer {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 50px 20px 20px;
     color: #ffffff;
     font-family: Arial, sans-serif;
